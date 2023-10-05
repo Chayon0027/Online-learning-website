@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<head>
+
+<title>Welcome to ChayonBlog</title>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+   
+   <link rel="stylesheet" href="style.css">
+   
+
+ 
+
+
+</head>
+
+<body>
+	<style>
+    .rw-conversation-container .rw-header{background-color: hsl(250, 69%, 61%);}
+    .rw-conversation-container .rw-messages-container .rw-message .rw-client{background-color: hsl(250, 69%, 61%);}
+    .rw-conversation-container .rw-reply{background-color: hsl(250, 69%, 61%); border: 1px solid #fa7070;}
+    body {
+      background-image:url('ciu.png');
+      }
+      </style>
+  <script>
+    sessionStorage.clear()
+  !(function () {
+  let e = document.createElement("script"),
+    t = document.head || document.getElementsByTagName("head")[0];
+  (e.src =
+    "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
+    
+    (e.async = !0),
+    (e.onload = () => {
+      window.WebChat.default(
+        {
+          initPayload: '/greet',
+          customData: { language: "bn" },
+          socketUrl: "http://localhost:5005",
+          title: 'Welcome to CIU',
+          // subtitle: 'lets get started',
+          profileAvatar: "./assets/svg/robot2.svg",
+          openLauncherImage: "./assets/svg/robot2.svg",
+          showFullScreenButton: true,
+          showMessageDate: true,
+          inputTextFieldHint: "What's in your mind?"
+          // add other props here
+          
+        },
+        null
+      );
+     
+    }),
+
+    window.addEventListener("beforeunload", function(event) {
+  localStorage.clear();
+});
+    t.insertBefore(e, t.firstChild);
+})();
+</script>
+
+   <!--Navigation-->
+   <nav>
+       <img src="pic/logo1.jpg" alt="">
+       <div class="navigation">
+           <ul>
+               <li><a class="active" href="index.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="blog.html">Blog</a></li>
+               <li><a href="courses.html">Courses</a></li>
+               <li><a href="contact.html">Contact</a></li>
+               <li><a href="login1.html">Join Now</a></li>
+
+           </ul>
+       </div>
+   </nav>
+
+<!--Home-->
+<section id="home">
+   <h2><br>Progamming & <span>Development</span> Course</h2>
+   <p><b>Understanding computers and learning the basics of coding helps children to develop an appreciation of how things work.It also teaches them how software engineers use math in order to solve problems in a logical and creative way. This is an important reason that coding should be taught in schools, so children learn these skills while they are young.</b></p>
+ <div class="btn">
+   <a class="blue" href="about.html">Learn More</a>
+   <a class="yellow" href="courses.html">Visit Courses</a>
+ </div>
+
+</section>
+
+
+<!--features-->
+<section id="features">
+   <h1>Our Feature</h1>
+   <p>Here we provide some awesome features</p>
+   <div class="fea-base">
+       <div class="fea-box">
+       <i class="fas fa-graduation-cap"></i>
+       <h3>Scholarship Facility</h3>
+       <p>One make creepth, man bring theira firmament won't great heaven</p>
+       </div>
+           <div class="fea-box">
+           <i class="fas fa-file-certificate"></i>
+           <h3>Sell Online Course</h3>
+           <p>One make creepth, man bring theira firmament won't great heaven</p>
+           </div>
+               <div class="fea-box">
+               <i class="fas fa-award"></i>
+               <h3>Global certification</h3>
+               <p>One make creepth, man bring theira firmament won't great heaven</p>
+               </div>
+   </div>
+</section>
+
+<!--Course-->
+
+<section id="course">
+   <h1>Our Popular Courses</h1><br>
+   <h3><marquee><p>Here we provide the popular courses from our learning centre</p></marquee></h3>
+   <div class="course-box">
+
+   <div class="courses">
+     <img src="pic/c1.jpg" alt="">
+     <div class="details">
+       <span>Update 11/11/21</span>
+       <h6>JavaScript Begginers Course</h6>
+       <div class="star">
+        <span>(100)</span>
+         </div>
+      </div>
+      
+   </div>
+
+ <div class="courses">
+     <img src="pic/c2.jpg" alt="">
+     <div class="details">
+       <span>Update 11/11/21</span>
+       <h6>Java programming Begginers Course</h6>
+       <div class="star">
+       
+        <span>(100)</span>
+         </div>
+      </div>
+      
+   </div>
+
+    <div class="courses">
+     <img src="pic/c3.png" alt="">
+     <div class="details">
+       <span>Update 11/11/21</span>
+       <h6>C++ programming Begginers Course</h6>
+       <div class="star">
+      
+        <span>(100)</span>
+         </div>
+      </div>
+     
+   </div>
+
+    <div class="courses">
+     <img src="pic/c5.png" alt="">
+     <div class="details">
+       <span>Update 11/11/21</span>
+       <h6>HTML Begginers Course</h6>
+       <div class="star">
+        <span>(100)</span>
+         </div>
+      </div>
+      
+   </div>
+
+   <div class="courses">
+     <img src="pic/c4.png" alt="">
+     <div class="details">
+       <span>Update 11/11/21</span>
+       <h6>SQL Begginers Course</h6>
+       <div class="star">
+     
+        <span>(100)</span>
+         </div>
+      </div>
+      
+   </div>
+
+   <div class="courses">
+     <img src="pic/c6.jpg" alt="">
+     <div class="details">
+       <span>Update 11/11/21</span>
+       <h6>Python Begginers Course</h6>
+       <div class="star">
+
+        <span>(100)</span>
+         </div>
+      </div>
+      
+   </div>
+
+   </div>
+ </section>
+
+ <!--Registration-->
+ 
+
+
+<!--profiles-->
+<section id="experts">
+ <h1>Community Expert</h1>
+ <p>We are the Community expert</p>
+ <div class="expert-box">
+   <div class="profiles">
+     <img src="pic/ml.webp" width= "175" height= "175" alt="">
+     <h6>Chayon Dhar</h6>
+     <p>Artifial Intelligence</p>
+   <div class="pro-links">
+     <a href="https://www.facebook.com/chayon.dhar.1/"><img border="0" alt="FB" src="pic/fb.png" width="25" height="25"></a>&nbsp;&nbsp;
+     <a href="https://instagram.com/"><img border="0" alt="instagram" src="pic/instagram.png" width="25" height="25"></a>&nbsp;&nbsp;
+     <a href="https://twitter.com/"><img border="0" alt="Twitter" src="pic/twitter.png" width="25" height="25"></a>&nbsp;&nbsp;
+
+   </div>
+     </div>
+
+     <div class="profiles">
+       <img src="pic/ml.webp" width= "175" height= "175" alt="">
+       <h6>Jawad Inan</h6>
+       <p>Algorithm & Python</p>
+     <div class="pro-links">
+       <a href="https://www.facebook.com/jawad.inan"><img border="0" alt="FB" src="pic/fb.png" width="25" height="25"></a>&nbsp;&nbsp;
+       <a href="https://instagram.com/"><img border="0" alt="instagram" src="pic/instagram.png" width="25" height="25"></a>&nbsp;&nbsp;
+       <a href="https://twitter.com/"><img border="0" alt="Twitter" src="pic/twitter.png" width="25" height="25"></a>&nbsp;&nbsp;
+ 
+     </div>
+       </div>
+
+       <div class="profiles">
+         <img src="pic/ml.webp" width= "175" height= "175" alt="">
+         <h6>Mehrab</h6>
+         <p>C++ programming</p>
+       <div class="pro-links">
+         <a href="https://www.facebook.com/mehrab.altaf.3"><img border="0" alt="FB" src="pic/fb.png" width="25" height="25"></a>&nbsp;&nbsp;
+           <a href="https://instagram.com/"><img border="0" alt="instagram" src="pic/instagram.png" width="25" height="25"></a>&nbsp;&nbsp;
+           <a href="https://twitter.com/"><img border="0" alt="Twitter" src="pic/twitter.png" width="25" height="25"></a>&nbsp;&nbsp;
+   
+       </div>
+         </div>
+
+         <div class="profiles">
+           <img src="pic/ml.webp" width= "175" height= "175" alt="">
+           <h6>Joy Chanda</h6>
+           <p>HTML & CSS Expert</p>
+         <div class="pro-links">
+           <a href="https://www.facebook.com/chandajoy11"><img border="0" alt="FB" src="pic/fb.png" width="25" height="25"></a>&nbsp;&nbsp;
+           <a href="https://instagram.com/"><img border="0" alt="instagram" src="pic/instagram.png" width="25" height="25"></a>&nbsp;&nbsp;
+           <a href="https://twitter.com/"><img border="0" alt="Twitter" src="pic/twitter.png" width="25" height="25"></a>&nbsp;&nbsp;
+     
+         </div>
+           </div>
+ </div>
+</section>
+
+<footer >
+ <div class="footer-col">
+   <h3>Top Products</h3>
+   <li>Jobs</li>
+   <li>Services</li>
+   <li>Terms</li>
+   <li>Private Policy</li>
+ </div>
+
+  <div class="footer-col">
+   <h3>Quick links</h3>
+   <li>Jobs</li>
+   <li>Services</li>
+   <li>Terms</li>
+   <li>Private Policy</li>
+ </div>
+
+  <div class="footer-col">
+   <h3>Features</h3>
+   <li>Jobs</li>
+   <li>Services</li>
+   <li>Terms</li>
+   <li>Private Policy</li>
+ </div>
+
+ <div class="footer-col">
+   <h3>Resource</h3>
+   <li>Jobs</li>
+   <li>Services</li>
+   <li>Terms</li>
+   <li>Private Policy</li>
+ </div>
+
+ <div class="footer-col">
+   <h3>Newsletter</h3>
+   <p>Anything wants to say?</p>
+   <div class="subscribe">
+     <input type="text" placeholder="Write a message" name="">
+     <a href="#" class="yellow">SUBMIT</a>
+
+   </div>
+   <br><p>Designed by Chayon Dhar</p>
+
+ </div>
+
+ <div class="Follow">
+   
+
+   <div class="links">
+ <a href="https://www.facebook.com/"><img border="0" alt="FB" src="pic/fb.png" width="20" height="20"></a><br><br>
+<a href="https://twitter.com/"><img border="0" alt="Twitter" src="pic/twitter.png" width="20" height="20"></a><br><br>
+<a href="https://youtube.com/"><img border="0" alt="youtube" src="pic/youtube.png" width="20" height="20"></a><br><br>
+<a href="https://instagram.com/"><img border="0" alt="instagram" src="pic/instagram.png" width="20" height="20"></a>
+   </div>
+ </div>
+
+</footer>
+
+
+</body>
+</html>

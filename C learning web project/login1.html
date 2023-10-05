@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<head>
+
+<title>Welcome to ChayonBlog</title>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  
+
+  <!--Navigation-->
+  <nav>
+    <img src="pic/logo1.jpg" alt="">
+    <div class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="active" href="login1.html">Join Now</a></li>
+
+        </ul>
+    </div>
+</nav>
+
+
+  
+<!-- Home -->
+<section id="registration">
+    <div class="reminder">
+       <p>Get 100 online Course for free</p>
+       <h1>Register To get It</h1>
+    </div>
+    
+    <div class="login-page">
+        <script>
+        function validateLoginForm() {
+            var name = document.getElementById("text").value;
+            var password = document.getElementById("password").value;
+        
+            if (name == "" || password == "") {
+                document.getElementById("errorMsg").innerHTML = "Please fill the required fields"
+                return false;
+            }
+        
+            else if (password.length < 8) {
+                document.getElementById("errorMsg").innerHTML = "Your password must include atleast 8 characters"
+                return false;
+            }
+            else {
+                alert("Successfully logged in");
+                return true;
+            }
+        }
+
+        function validateSignupForm() {
+            var mail = document.getElementById("email").value;
+            var name = document.getElementById("text").value;
+            var password = document.getElementById("password").value;
+        
+            if (mail == "" || name == "" || password == "") {
+                document.getElementById("errorMsg").innerHTML = "Please fill the required fields"
+                return false;
+            }
+        
+            else if (password.length < 8) {
+                document.getElementById("errorMsg").innerHTML = "Your password must include atleast 8 characters"
+                return false;
+            }
+            else {
+                alert("Successfully signed up");
+                return true;
+            }
+        }
+
+        </script>
+      <div class="form">
+          <form class="register-form"  method="post" onsubmit="returnvalidateLoginForm()">
+           <input type="text" name="text" placeholder="user name"> 
+           <input type="password" name="password" placeholder="password"> 
+           <input type="email" name="email" placeholder="email id">   
+           <button>Create</button>
+           <p class="message">Already Registered? <a href="#">Login</a> </p>
+    
+          </form>
+    
+          <form class=" login-form" onsubmit="returnvalidateLoginForm()">
+          <input type="text" name="text" placeholder="user name"> 
+           <input type="password" name="password" placeholder="password"> 
+           <button>login</button>
+           <p class="message">Not Registered? <a href="#">Register</a></p>
+          </form>
+      </div>
+    
+    </div>
+    
+    <script src="pic/jquery-3.6.0.min.js">
+    
+    </script>
+    
+    <script>
+        $('.message a').click(function(){
+          $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+        });
+    </script>
+    
+    
+    
+    
+    
+    
+    </section>
+
+
+<footer >
+  <div class="footer-col">
+    <h3>Top Products</h3>
+    <li>Jobs</li>
+    <li>Services</li>
+    <li>Terms</li>
+    <li>Private Policy</li>
+  </div>
+
+   <div class="footer-col">
+    <h3>Quick links</h3>
+    <li>Jobs</li>
+    <li>Services</li>
+    <li>Terms</li>
+    <li>Private Policy</li>
+  </div>
+
+   <div class="footer-col">
+    <h3>Features</h3>
+    <li>Jobs</li>
+    <li>Services</li>
+    <li>Terms</li>
+    <li>Private Policy</li>
+  </div>
+
+  <div class="footer-col">
+    <h3>Resource</h3>
+    <li>Jobs</li>
+    <li>Services</li>
+    <li>Terms</li>
+    <li>Private Policy</li>
+  </div>
+
+  <div class="footer-col">
+    <h3>Newsletter</h3>
+    <p>Anything wants to say?</p>
+    <div class="subscribe">
+      <input type="text" placeholder="Write a message" name="">
+      <a href="#" class="yellow">SUBMIT</a>
+
+    </div>
+    <br><p>Designed by Chayon Dhar</p>
+
+  </div>
+
+  <div class="Follow">
+    
+
+    <div class="links">
+  <a href="https://www.facebook.com/"><img border="0" alt="FB" src="pic/fb.png" width="20" height="20"></a><br><br>
+<a href="https://twitter.com/"><img border="0" alt="Twitter" src="pic/twitter.png" width="20" height="20"></a><br><br>
+<a href="https://youtube.com/"><img border="0" alt="youtube" src="pic/youtube.png" width="20" height="20"></a><br><br>
+<a href="https://instagram.com/"><img border="0" alt="instagram" src="pic/instagram.png" width="20" height="20"></a>
+    </div>
+  </div>
+
+</footer>
+
+ 
+   
+</body>
+
+</html>
